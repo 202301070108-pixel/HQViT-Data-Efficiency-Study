@@ -1,0 +1,2 @@
+Data Fraction (%),Training Samples,Completed Epochs,Train Accuracy (%),Validation Accuracy (%),Generalisation Gap (pp),Train Loss,Validation Loss,Epoch Time (seconds)
+10,4500,3,24.31111111111111,25.96,-1.6488888888888886,1.9095738546583387,1.8967735427856445,96.59110426902771

@@ -1,0 +1,18 @@
+{
+    "dataset": "CIFAR-10",
+    "model": "ClassicalCNN",
+    "seed": 42,
+    "data_fractions": [
+        0.1,
+        0.25,
+        0.5,
+        1.0
+    ],
+    "training_pool_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "epochs": 5,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "device": "cpu"
+}

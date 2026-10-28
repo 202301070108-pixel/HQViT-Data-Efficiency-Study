@@ -1,0 +1,16 @@
+{
+  "experiment": "hybrid_smoke_test",
+  "training_samples": 256,
+  "validation_samples": 128,
+  "epochs": 1,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "training_loss": 2.3343167304992676,
+  "training_accuracy": 0.13671875,
+  "validation_loss": 2.3155925571918488,
+  "validation_accuracy": 0.109375,
+  "elapsed_seconds": 5.334083080291748,
+  "device": "cpu",
+  "num_qubits": 4,
+  "quantum_layers": 2
+}

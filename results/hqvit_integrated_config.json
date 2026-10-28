@@ -1,0 +1,16 @@
+{
+    "architecture": "HybridQuantumViT",
+    "dataset": "CIFAR-10",
+    "num_classes": 10,
+    "embedding_dim": 128,
+    "transformer_layers": 4,
+    "num_qubits": 4,
+    "num_quantum_layers": 2,
+    "training_fractions": [
+        0.1,
+        0.25,
+        0.5,
+        1.0
+    ],
+    "status": "initialized_not_trained"
+}

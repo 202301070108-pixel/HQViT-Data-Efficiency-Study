@@ -1,0 +1,5 @@
+Training Fraction,Training Images,Train Accuracy (%),Validation Accuracy (%),Generalisation Gap (pp),Train Loss,Validation Loss,Training Time (s)
+0.1,4500,54.8,50.98,3.82,1.274,1.382,40.445
+0.25,11250,62.64,60.2,2.44,1.053,1.116,72.612
+0.5,22500,66.311,66.7,-0.389,0.943,0.959,129.161
+1.0,45000,72.318,71.0,1.318,0.783,0.831,241.422
