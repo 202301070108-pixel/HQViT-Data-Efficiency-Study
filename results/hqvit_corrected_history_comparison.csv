@@ -1,0 +1,5 @@
+experiment,epochs_recorded,best_validation_accuracy,best_epoch,training_accuracy_at_best_epoch,validation_loss_at_best_epoch,history_file
+Corrected HQViT (10%),3,0.1716,3.0,0.13244444444444445,2.2252891189575195,results/hqvit_corrected_history_10pct.csv
+Previous integrated HQViT (10%),3,0.1026,3.0,0.10133333333333333,2.3037138122558596,results/hqvit_integrated_history_10pct.csv
+Classical CNN,20,0.71,5.0,0.7231777777777778,0.8306202962875366,results/cnn_data_efficiency_history.csv
+Classical ViT,12,0.5554,3.0,0.5455111111111111,1.21313402299881,results/vit_data_efficiency_history.csv

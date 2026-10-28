@@ -1,0 +1,6 @@
+group,gradient_available,gradient_norm,parameter_norm,gradients_finite
+Transformer,True,0.33833603173128374,56.019532240229886,True
+Projection norm,True,0.0413108691583465,11.06108203330234,True
+Quantum projection,True,1.0281471435527052,0.9402177814708613,True
+Quantum weights,True,0.272225946187973,0.5724842548370361,True
+Classifier,True,1.3267559296157359,4.499617905755429,True

@@ -1,0 +1,2 @@
+mean_max_probability,mean_entropy,max_entropy_10_classes,mean_confidence_correct,mean_confidence_incorrect,expected_calibration_error_10_bins
+0.13034871,2.278876,2.302585092994046,0.13323516,0.12975079,0.04125128779411316
