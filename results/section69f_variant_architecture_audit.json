@@ -1,0 +1,95 @@
+{
+  "section": "69F",
+  "training_performed": false,
+  "quantum_circuit_executed_for_expanded_variants": false,
+  "baseline_equivalent": true,
+  "baseline_max_output_difference": 0.0,
+  "original_baseline_unchanged": true,
+  "all_variants_valid": true,
+  "variants": {
+    "4": {
+      "variant": "HQViT-4",
+      "parameter_count": 547720,
+      "projection_weight_shape": [
+        4,
+        128
+      ],
+      "compression_type": "Identity",
+      "compression_weight_shape": null,
+      "expanded_feature_shape": [
+        4,
+        4
+      ],
+      "compressed_feature_shape": [
+        4,
+        4
+      ],
+      "quantum_input_shape": [
+        4,
+        4
+      ],
+      "classifier_input_dimension": 4,
+      "dimensions_valid": true,
+      "features_finite": true,
+      "angle_bound_valid": true
+    },
+    "8": {
+      "variant": "HQViT-8-to-4",
+      "parameter_count": 548272,
+      "projection_weight_shape": [
+        8,
+        128
+      ],
+      "compression_type": "Linear",
+      "compression_weight_shape": [
+        4,
+        8
+      ],
+      "expanded_feature_shape": [
+        4,
+        8
+      ],
+      "compressed_feature_shape": [
+        4,
+        4
+      ],
+      "quantum_input_shape": [
+        4,
+        4
+      ],
+      "classifier_input_dimension": 4,
+      "dimensions_valid": true,
+      "features_finite": true,
+      "angle_bound_valid": true
+    },
+    "16": {
+      "variant": "HQViT-16-to-4",
+      "parameter_count": 549336,
+      "projection_weight_shape": [
+        16,
+        128
+      ],
+      "compression_type": "Linear",
+      "compression_weight_shape": [
+        4,
+        16
+      ],
+      "expanded_feature_shape": [
+        4,
+        16
+      ],
+      "compressed_feature_shape": [
+        4,
+        4
+      ],
+      "quantum_input_shape": [
+        4,
+        4
+      ],
+      "classifier_input_dimension": 4,
+      "dimensions_valid": true,
+      "features_finite": true,
+      "angle_bound_valid": true
+    }
+  }
+}

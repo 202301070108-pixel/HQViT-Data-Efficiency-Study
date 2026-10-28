@@ -1,0 +1,42 @@
+{
+  "section": "69C",
+  "diagnostic_only": true,
+  "training_performed": false,
+  "optimizer_steps": 0,
+  "checkpoint_overwritten": false,
+  "checkpoint_path": "models/hqvit_corrected_10pct.pt",
+  "checkpoint_size_bytes": 2215960,
+  "model_class": "CorrectedHybridQuantumViT",
+  "independent_model_created": true,
+  "strict_checkpoint_load": true,
+  "state_keys_match": true,
+  "max_state_difference_vs_original": 0.0,
+  "original_model_unchanged": true,
+  "device": "cpu",
+  "input_shape": [
+    4,
+    3,
+    32,
+    32
+  ],
+  "output_shape": [
+    4,
+    10
+  ],
+  "output_shape_valid": true,
+  "outputs_finite": true,
+  "probabilities_valid": true,
+  "inference_seconds": [
+    0.0792884900001809,
+    0.054420804000073986,
+    0.060286228000222764
+  ],
+  "mean_inference_seconds": 0.06466517400015921,
+  "predicted_classes": [
+    8,
+    6,
+    6,
+    6
+  ],
+  "mean_max_probability": 0.136287122964859
+}

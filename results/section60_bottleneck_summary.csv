@@ -1,0 +1,7 @@
+category,observation,interpretation,evidence_strength
+Numerical integrity,0 non-finite parameter values found.,Model parameters are numerically finite.,Direct parameter check
+Transformer-to-quantum mapping,"The live probe measured feature statistics at the Transformer, projection, angle-encoding and quantum-output stages.",Compare the variability and information retained at each stage.,Small-sample exploratory probe
+Quantum-feature redundancy,Mean absolute off-diagonal quantum correlation: 0.5334.,Inspect individual correlations for potentially redundant outputs.,Small-sample exploratory probe
+Historical class collapse,A historical full-validation class-distribution table was found.,Use predicted-class coverage and class-wise recall to assess whether the model disproportionately predicts a small subset of classes.,Saved historical diagnostic
+Representation bottleneck,Historical frozen linear-probe results are available.,"Compare Transformer CLS performance with quantum-feature performance. A lower quantum-feature score is consistent with information loss at the quantum mapping stage, although the probe alone does not establish causality.",Saved exploratory validation diagnostic
+Training budget,The corrected HQViT historical experiment used 10% of the training pool for three epochs.,"Poor performance may reflect optimization, training budget, representation quality or architecture. More evidence is needed before attributing the result to the quantum circuit alone.",Historical experiment configuration

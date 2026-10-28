@@ -1,0 +1,5 @@
+representation,samples,feature_dimension,cv_accuracy_mean,cv_accuracy_std,cv_folds
+Transformer CLS,5000,128,0.2476,0.015054567413247056,5
+Projection features,5000,4,0.2004,0.008546344247688593,5
+Bounded quantum inputs,5000,4,0.1992,0.009108238029388557,5
+Actual quantum measurements,5000,4,0.1972,0.010186265262597477,5

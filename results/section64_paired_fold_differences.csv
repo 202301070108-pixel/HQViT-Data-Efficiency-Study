@@ -1,0 +1,5 @@
+comparison,first_representation,second_representation,accuracy_difference_mean,accuracy_difference_std,macro_f1_difference_mean,macro_f1_difference_std
+CLS,Transformer CLS,Projection,0.051000000000000004,0.014071247279470301,0.10751677498491644,0.014171803913699267
+Projection to bounded inputs,Projection,Bounded quantum inputs,0.0006000000000000061,0.01128273016605466,-0.0004957434250940473,0.010918241804157455
+Bounded inputs to measurements,Bounded quantum inputs,Actual quantum measurements,0.0032000000000000028,0.006379655163094623,0.0070582207672553994,0.010196643777374132
+CLS to measurements,Transformer CLS,Actual quantum measurements,0.0548,0.010568822072492283,0.11407925232707779,0.015597875337341053

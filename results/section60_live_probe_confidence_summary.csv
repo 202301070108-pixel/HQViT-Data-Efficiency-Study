@@ -1,0 +1,2 @@
+sample_count,mean_max_probability,median_max_probability,mean_entropy,maximum_entropy_for_10_classes,probe_accuracy,mean_confidence_correct,mean_confidence_incorrect
+32,0.1302361786365509,0.13118675351142883,2.27834415435791,2.302585092994046,0.125,0.13341842591762543,0.129781574010849

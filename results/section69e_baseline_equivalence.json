@@ -1,0 +1,45 @@
+{
+  "section": "69E",
+  "training_performed": false,
+  "checkpoint_overwritten": false,
+  "original_model_unchanged": true,
+  "checkpoint_path": "models/hqvit_corrected_10pct.pt",
+  "checkpoint_exists": true,
+  "model_class": "CorrectedHybridQuantumViT",
+  "parameter_count": 547720,
+  "projection": {
+    "input_dimension": 128,
+    "output_dimension": 4
+  },
+  "quantum_weights_shape": [
+    2,
+    4,
+    2
+  ],
+  "classifier_linear_layers": [
+    {
+      "name": "0",
+      "input_dimension": 4,
+      "output_dimension": 32
+    },
+    {
+      "name": "3",
+      "input_dimension": 32,
+      "output_dimension": 10
+    }
+  ],
+  "input_shape": [
+    4,
+    3,
+    32,
+    32
+  ],
+  "output_shape": [
+    4,
+    10
+  ],
+  "outputs_finite": true,
+  "max_output_difference_vs_checkpoint_copy": 0.0,
+  "forward_outputs_equivalent": true,
+  "forward_source": "    def forward(self, images):\n        tokens = self.vit.patch_embedding(images)\n        tokens = tokens.flatten(2).transpose(1, 2)\n\n        cls_tokens = self.vit.cls_token.expand(\n            images.size(0), -1, -1\n        )\n\n        tokens = torch.cat((cls_tokens, tokens), dim=1)\n        tokens = tokens + self.vit.pos_embedding\n        tokens = self.vit.embedding_dropout(tokens)\n        tokens = self.vit.transformer(tokens)\n\n        representation = self.projection_norm(tokens[:, 0])\n\n        projected = self.quantum_projection(representation)\n        quantum_inputs = (torch.pi / 4) * torch.tanh(projected)\n\n        quantum_rows = []\n\n        for sample in quantum_inputs:\n            measurements = quantum_circuit(\n                sample,\n                self.quantum_weights,\n            )\n\n            if isinstance(measurements, (tuple, list)):\n                measurements = torch.stack([\n                    torch.as_tensor(\n                        value,\n                        device=images.device,\n                        dtype=images.dtype,\n                    )\n                    for value in measurements\n                ])\n            else:\n                measurements = torch.as_tensor(\n                    measurements,\n                    device=images.device,\n                    dtype=images.dtype,\n                )\n\n            quantum_rows.append(measurements)\n\n        quantum_outputs = torch.stack(quantum_rows)\n\n        classifier_parameter = next(self.classifier.parameters())\n\n        quantum_outputs = quantum_outputs.to(\n            device=classifier_parameter.device,\n            dtype=classifier_parameter.dtype,\n        )\n\n        return self.classifier(quantum_outputs)\n"
+}

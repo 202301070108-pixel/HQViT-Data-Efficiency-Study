@@ -1,0 +1,31 @@
+{
+  "section": 61,
+  "diagnostic_only": true,
+  "hqvit_training_performed": false,
+  "checkpoint_modified": false,
+  "validation_samples": 5000,
+  "transformer_cls_dimension": 128,
+  "projection_dimension": 4,
+  "projection_mean_absolute_off_diagonal_correlation": 0.568288629243516,
+  "projection_features_finite": true,
+  "transformer_features_finite": true,
+  "probe_results": [
+    {
+      "representation": "Transformer CLS representation",
+      "samples": 5000,
+      "feature_dimension": 128,
+      "cv_accuracy_mean": 0.2476,
+      "cv_accuracy_std": 0.015054567413247056,
+      "cv_folds": 5
+    },
+    {
+      "representation": "Four-dimensional projection input",
+      "samples": 5000,
+      "feature_dimension": 4,
+      "cv_accuracy_mean": 0.2004,
+      "cv_accuracy_std": 0.008546344247688593,
+      "cv_folds": 5
+    }
+  ],
+  "interpretation_note": "The four-dimensional features captured here are the input to the quantum circuit, not its final quantum measurements. Probe results are exploratory because validation labels are used."
+}

@@ -1,0 +1,223 @@
+{
+  "section": 64,
+  "title": "Projection Information Loss and Quantum Transformation Audit",
+  "diagnostic_only": true,
+  "neural_network_training_performed": false,
+  "checkpoint_modified": false,
+  "quantum_circuit_executed": false,
+  "validation_samples": 5000,
+  "number_of_classes": 10,
+  "cross_validation": {
+    "method": "StratifiedKFold",
+    "n_splits": 5,
+    "random_state": 42,
+    "same_folds_across_representations": true
+  },
+  "projection_geometry": {
+    "numerical_rank": 4,
+    "effective_rank": 1.602468704969029,
+    "total_centered_squared_singular_value_energy": 45450.962518902605,
+    "explained_variance_ratio": [
+      0.827297334578896,
+      0.17074200258844188,
+      0.0017496414183019086,
+      0.00021102141436015565
+    ],
+    "singular_values": [
+      193.910959323947,
+      88.09306646978321,
+      8.917560570288247,
+      3.0969543740212337
+    ]
+  },
+  "representation_probe_comparison": [
+    {
+      "representation": "Transformer CLS",
+      "n_features": 128,
+      "accuracy_mean": 0.25120000000000003,
+      "accuracy_std": 0.016946976131451894,
+      "macro_f1_mean": 0.2315867305858627,
+      "macro_f1_std": 0.016436955336625383
+    },
+    {
+      "representation": "Projection",
+      "n_features": 4,
+      "accuracy_mean": 0.2002,
+      "accuracy_std": 0.0038987177379235824,
+      "macro_f1_mean": 0.12406995560094632,
+      "macro_f1_std": 0.003322709742528246
+    },
+    {
+      "representation": "Bounded quantum inputs",
+      "n_features": 4,
+      "accuracy_mean": 0.19960000000000003,
+      "accuracy_std": 0.011610340218959991,
+      "macro_f1_mean": 0.12456569902604038,
+      "macro_f1_std": 0.010501346403709344
+    },
+    {
+      "representation": "Actual quantum measurements",
+      "n_features": 4,
+      "accuracy_mean": 0.19639999999999996,
+      "accuracy_std": 0.009555103348473001,
+      "macro_f1_mean": 0.11750747825878496,
+      "macro_f1_std": 0.00404491738649507
+    }
+  ],
+  "paired_fold_differences": [
+    {
+      "comparison": "CLS",
+      "first_representation": "Transformer CLS",
+      "second_representation": "Projection",
+      "accuracy_difference_mean": 0.051000000000000004,
+      "accuracy_difference_std": 0.014071247279470301,
+      "macro_f1_difference_mean": 0.10751677498491644,
+      "macro_f1_difference_std": 0.014171803913699267
+    },
+    {
+      "comparison": "Projection to bounded inputs",
+      "first_representation": "Projection",
+      "second_representation": "Bounded quantum inputs",
+      "accuracy_difference_mean": 0.0006000000000000061,
+      "accuracy_difference_std": 0.01128273016605466,
+      "macro_f1_difference_mean": -0.0004957434250940473,
+      "macro_f1_difference_std": 0.010918241804157455
+    },
+    {
+      "comparison": "Bounded inputs to measurements",
+      "first_representation": "Bounded quantum inputs",
+      "second_representation": "Actual quantum measurements",
+      "accuracy_difference_mean": 0.0032000000000000028,
+      "accuracy_difference_std": 0.006379655163094623,
+      "macro_f1_difference_mean": 0.0070582207672553994,
+      "macro_f1_difference_std": 0.010196643777374132
+    },
+    {
+      "comparison": "CLS to measurements",
+      "first_representation": "Transformer CLS",
+      "second_representation": "Actual quantum measurements",
+      "accuracy_difference_mean": 0.0548,
+      "accuracy_difference_std": 0.010568822072492283,
+      "macro_f1_difference_mean": 0.11407925232707779,
+      "macro_f1_difference_std": 0.015597875337341053
+    }
+  ],
+  "quantum_transformation_statistics": [
+    {
+      "stage": "Projection",
+      "feature": "F0",
+      "mean": -1.4890928598739206,
+      "std": 1.6157998449388622,
+      "minimum": -3.2478199005126953,
+      "maximum": 2.1228206157684326,
+      "variance": 2.6108091389044508
+    },
+    {
+      "stage": "Projection",
+      "feature": "F1",
+      "mean": -3.079773178947251,
+      "std": 1.9599541873640556,
+      "minimum": -5.513462543487549,
+      "maximum": 1.8571014404296875,
+      "variance": 3.8414204165658954
+    },
+    {
+      "stage": "Projection",
+      "feature": "F2",
+      "mean": -1.2528737200438975,
+      "std": 1.3258889206485531,
+      "minimum": -3.120205879211426,
+      "maximum": 0.8975966572761536,
+      "variance": 1.7579814298985852
+    },
+    {
+      "stage": "Projection",
+      "feature": "F3",
+      "mean": 3.0999399825008584,
+      "std": 0.9390420228045084,
+      "minimum": -2.118138313293457,
+      "maximum": 4.602204322814941,
+      "variance": 0.881799920592783
+    },
+    {
+      "stage": "Bounded quantum inputs",
+      "feature": "F0",
+      "mean": -0.374406423638769,
+      "std": 0.5199464726694731,
+      "minimum": -0.7830298542976379,
+      "maximum": 0.7632119655609131,
+      "variance": 0.2703443344414272
+    },
+    {
+      "stage": "Bounded quantum inputs",
+      "feature": "F1",
+      "mean": -0.6551474797760602,
+      "std": 0.26178767174574935,
+      "minimum": -0.7853726148605347,
+      "maximum": 0.7480213046073914,
+      "variance": 0.06853278507806022
+    },
+    {
+      "stage": "Bounded quantum inputs",
+      "feature": "F2",
+      "mean": -0.37137381973645606,
+      "std": 0.4747608596883095,
+      "minimum": -0.7823425531387329,
+      "maximum": 0.5616583824157715,
+      "variance": 0.22539787389198268
+    },
+    {
+      "stage": "Bounded quantum inputs",
+      "feature": "F3",
+      "mean": 0.7550185696601868,
+      "std": 0.15006514878806482,
+      "minimum": -0.7630061507225037,
+      "maximum": 0.7852401733398438,
+      "variance": 0.02251954888078403
+    },
+    {
+      "stage": "Actual quantum measurements",
+      "feature": "F0",
+      "mean": 0.6261984072296382,
+      "std": 0.2538779457795821,
+      "minimum": 0.3861180627635156,
+      "maximum": 0.9923295196928708,
+      "variance": 0.06445401135326044
+    },
+    {
+      "stage": "Actual quantum measurements",
+      "feature": "F1",
+      "mean": 0.8366717159385334,
+      "std": 0.06613143643617389,
+      "minimum": 0.6327434940110837,
+      "maximum": 0.9944288103240244,
+      "variance": 0.004373366885111708
+    },
+    {
+      "stage": "Actual quantum measurements",
+      "feature": "F2",
+      "mean": 0.49351047746506294,
+      "std": 0.3469222246540171,
+      "minimum": 0.18563789393370533,
+      "maximum": 0.9893564343990867,
+      "variance": 0.12035502995889233
+    },
+    {
+      "stage": "Actual quantum measurements",
+      "feature": "F3",
+      "mean": 0.7194985387026884,
+      "std": 0.054543366451732606,
+      "minimum": 0.42187157444593526,
+      "maximum": 0.8376640566597253,
+      "variance": 0.00297497882388799
+    }
+  ],
+  "interpretation_limits": [
+    "Validation-label results are exploratory and are not independent test estimates.",
+    "Effective rank describes feature geometry, not class information directly.",
+    "Fold-level differences are descriptive; no formal significance test is performed.",
+    "Cross-validation fold estimates are dependent because their training sets overlap.",
+    "Performance differences do not establish which model component caused information loss.",
+    "All representations must correspond to the same validation sample order."
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "section": 67,
+  "title": "Controlled Projection-Bottleneck Experiment",
+  "diagnostic_only": true,
+  "neural_network_training_performed": false,
+  "checkpoint_modified": false,
+  "quantum_circuit_executed": false,
+  "validation_samples": 5000,
+  "number_of_classes": 10,
+  "cross_validation": {
+    "method": "StratifiedKFold",
+    "n_splits": 5,
+    "random_state": 42,
+    "same_folds_across_representations": true,
+    "pca_fitted_inside_training_folds": true,
+    "scaling_fitted_inside_training_folds": true
+  },
+  "summary": [
+    {
+      "representation": "PCA-4",
+      "dimensions": 4,
+      "accuracy_mean": 0.2052,
+      "accuracy_std": 0.01084896308409241,
+      "balanced_accuracy_mean": 0.19983268959204245,
+      "balanced_accuracy_std": 0.010392276900249051,
+      "macro_f1_mean": 0.1433592136477195,
+      "macro_f1_std": 0.00994212090575829,
+      "explained_variance_ratio_mean": 0.9616484363973761
+    },
+    {
+      "representation": "Learned projection",
+      "dimensions": 4,
+      "accuracy_mean": 0.2002,
+      "accuracy_std": 0.0038987177379235824,
+      "balanced_accuracy_mean": 0.1945681132594685,
+      "balanced_accuracy_std": 0.0034385956694791262,
+      "macro_f1_mean": 0.12406995560094632,
+      "macro_f1_std": 0.003322709742528246,
+      "explained_variance_ratio_mean": null
+    },
+    {
+      "representation": "PCA-8",
+      "dimensions": 8,
+      "accuracy_mean": 0.2136,
+      "accuracy_std": 0.010139033484509263,
+      "balanced_accuracy_mean": 0.209807911887206,
+      "balanced_accuracy_std": 0.010064820179706497,
+      "macro_f1_mean": 0.1669473280813965,
+      "macro_f1_std": 0.009283261611288259,
+      "explained_variance_ratio_mean": 0.9920745609618068
+    },
+    {
+      "representation": "PCA-16",
+      "dimensions": 16,
+      "accuracy_mean": 0.22399999999999998,
+      "accuracy_std": 0.015182226450688976,
+      "balanced_accuracy_mean": 0.22123332207805851,
+      "balanced_accuracy_std": 0.015378686060774584,
+      "macro_f1_mean": 0.19686926487598355,
+      "macro_f1_std": 0.014125905957292717,
+      "explained_variance_ratio_mean": 0.9988934257870277
+    },
+    {
+      "representation": "PCA-32",
+      "dimensions": 32,
+      "accuracy_mean": 0.23700000000000002,
+      "accuracy_std": 0.012864680330268606,
+      "balanced_accuracy_mean": 0.235299896242603,
+      "balanced_accuracy_std": 0.01319419007819513,
+      "macro_f1_mean": 0.2207882618224509,
+      "macro_f1_std": 0.014566525399174976,
+      "explained_variance_ratio_mean": 0.999828089610548
+    },
+    {
+      "representation": "PCA-64",
+      "dimensions": 64,
+      "accuracy_mean": 0.2606,
+      "accuracy_std": 0.015076471735787534,
+      "balanced_accuracy_mean": 0.25977986794370184,
+      "balanced_accuracy_std": 0.015107323078412836,
+      "macro_f1_mean": 0.251920709041465,
+      "macro_f1_std": 0.01355685641110775,
+      "explained_variance_ratio_mean": 0.9999859852867763
+    }
+  ],
+  "paired_fold_differences": [
+    {
+      "first_representation": "PCA-4",
+      "second_representation": "Learned projection",
+      "accuracy_difference_mean": 0.004999999999999999,
+      "accuracy_difference_std": 0.009669539802906846,
+      "balanced_accuracy_difference_mean": 0.0052645763325740004,
+      "balanced_accuracy_difference_std": 0.009791889975413559,
+      "macro_f1_difference_mean": 0.019289258046773214,
+      "macro_f1_difference_std": 0.011212116526272351
+    },
+    {
+      "first_representation": "PCA-8",
+      "second_representation": "PCA-4",
+      "accuracy_difference_mean": 0.008399999999999996,
+      "accuracy_difference_std": 0.014363147287415804,
+      "balanced_accuracy_difference_mean": 0.009975222295163521,
+      "balanced_accuracy_difference_std": 0.01493336249158297,
+      "macro_f1_difference_mean": 0.023588114433676977,
+      "macro_f1_difference_std": 0.01639508237193277
+    },
+    {
+      "first_representation": "PCA-16",
+      "second_representation": "PCA-4",
+      "accuracy_difference_mean": 0.01879999999999999,
+      "accuracy_difference_std": 0.020278066969018512,
+      "balanced_accuracy_difference_mean": 0.021400632486016036,
+      "balanced_accuracy_difference_std": 0.021041631920415787,
+      "macro_f1_difference_mean": 0.05351005122826401,
+      "macro_f1_difference_std": 0.021129238797259555
+    },
+    {
+      "first_representation": "PCA-32",
+      "second_representation": "PCA-4",
+      "accuracy_difference_mean": 0.031799999999999995,
+      "accuracy_difference_std": 0.012029131306956448,
+      "balanced_accuracy_difference_mean": 0.035467206650560516,
+      "balanced_accuracy_difference_std": 0.012892258909594704,
+      "macro_f1_difference_mean": 0.07742904817473141,
+      "macro_f1_difference_std": 0.014738550739112328
+    },
+    {
+      "first_representation": "PCA-64",
+      "second_representation": "PCA-4",
+      "accuracy_difference_mean": 0.055400000000000005,
+      "accuracy_difference_std": 0.021220273325289668,
+      "balanced_accuracy_difference_mean": 0.05994717835165936,
+      "balanced_accuracy_difference_std": 0.021429529558111643,
+      "macro_f1_difference_mean": 0.10856149539374546,
+      "macro_f1_difference_std": 0.02047746756145489
+    }
+  ],
+  "limitations": [
+    "Exploratory results use validation labels.",
+    "The existing learned projection was trained before cross-validation.",
+    "PCA and the learned projection were not optimized under identical objectives.",
+    "Fold differences are descriptive and do not establish causality.",
+    "Final confirmation requires an independent test set."
+  ]
+}

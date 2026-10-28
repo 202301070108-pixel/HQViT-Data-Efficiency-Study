@@ -1,0 +1,174 @@
+{
+  "section": 65,
+  "title": "PCA Compression vs. Learned Projection",
+  "diagnostic_only": true,
+  "neural_network_training_performed": false,
+  "checkpoint_modified": false,
+  "quantum_circuit_executed": false,
+  "validation_samples": 5000,
+  "number_of_classes": 10,
+  "cross_validation": {
+    "method": "StratifiedKFold",
+    "n_splits": 5,
+    "random_state": 42,
+    "same_folds_across_representations": true,
+    "pca_fitted_inside_each_training_fold": true,
+    "feature_scaling_fitted_inside_each_training_fold": true
+  },
+  "results": [
+    {
+      "representation": "PCA-2",
+      "n_components": 2,
+      "accuracy_mean": 0.1984,
+      "accuracy_std": 0.006804410334481596,
+      "macro_f1_mean": 0.12291515568257105,
+      "macro_f1_std": 0.005383359010313079,
+      "explained_variance_ratio_mean": 0.9058599753775635
+    },
+    {
+      "representation": "PCA-4",
+      "n_components": 4,
+      "accuracy_mean": 0.2052,
+      "accuracy_std": 0.01084896308409241,
+      "macro_f1_mean": 0.1433592136477195,
+      "macro_f1_std": 0.00994212090575829,
+      "explained_variance_ratio_mean": 0.9616484363973761
+    },
+    {
+      "representation": "Learned projection",
+      "n_components": 4,
+      "accuracy_mean": 0.2002,
+      "accuracy_std": 0.0038987177379235824,
+      "macro_f1_mean": 0.12406995560094632,
+      "macro_f1_std": 0.003322709742528246,
+      "explained_variance_ratio_mean": null
+    },
+    {
+      "representation": "PCA-8",
+      "n_components": 8,
+      "accuracy_mean": 0.2136,
+      "accuracy_std": 0.010139033484509263,
+      "macro_f1_mean": 0.1669473280813965,
+      "macro_f1_std": 0.009283261611288259,
+      "explained_variance_ratio_mean": 0.9920745609618068
+    },
+    {
+      "representation": "PCA-16",
+      "n_components": 16,
+      "accuracy_mean": 0.22399999999999998,
+      "accuracy_std": 0.015182226450688976,
+      "macro_f1_mean": 0.19686926487598355,
+      "macro_f1_std": 0.014125905957292717,
+      "explained_variance_ratio_mean": 0.9988934257870277
+    },
+    {
+      "representation": "PCA-32",
+      "n_components": 32,
+      "accuracy_mean": 0.23700000000000002,
+      "accuracy_std": 0.012864680330268606,
+      "macro_f1_mean": 0.2207882618224509,
+      "macro_f1_std": 0.014566525399174976,
+      "explained_variance_ratio_mean": 0.999828089610548
+    },
+    {
+      "representation": "PCA-64",
+      "n_components": 64,
+      "accuracy_mean": 0.2606,
+      "accuracy_std": 0.015076471735787534,
+      "macro_f1_mean": 0.251920709041465,
+      "macro_f1_std": 0.01355685641110775,
+      "explained_variance_ratio_mean": 0.9999859852867763
+    },
+    {
+      "representation": "PCA-128",
+      "n_components": 128,
+      "accuracy_mean": 0.25959999999999994,
+      "accuracy_std": 0.015175638372075152,
+      "macro_f1_mean": 0.25354717250777525,
+      "macro_f1_std": 0.01425639705319436,
+      "explained_variance_ratio_mean": 0.9999999999999998
+    },
+    {
+      "representation": "Full CLS",
+      "n_components": 128,
+      "accuracy_mean": 0.251,
+      "accuracy_std": 0.016537835408541233,
+      "macro_f1_mean": 0.23139608316021643,
+      "macro_f1_std": 0.016115070354950353,
+      "explained_variance_ratio_mean": null
+    }
+  ],
+  "paired_fold_differences_vs_learned_projection": [
+    {
+      "representation": "PCA-2",
+      "reference": "Learned projection",
+      "accuracy_difference_mean": -0.0018000000000000017,
+      "accuracy_difference_std": 0.004438468204234433,
+      "macro_f1_difference_mean": -0.0011547999183752432,
+      "macro_f1_difference_std": 0.004934902089044694
+    },
+    {
+      "representation": "PCA-4",
+      "reference": "Learned projection",
+      "accuracy_difference_mean": 0.004999999999999999,
+      "accuracy_difference_std": 0.009669539802906846,
+      "macro_f1_difference_mean": 0.019289258046773214,
+      "macro_f1_difference_std": 0.011212116526272351
+    },
+    {
+      "representation": "PCA-8",
+      "reference": "Learned projection",
+      "accuracy_difference_mean": 0.013399999999999995,
+      "accuracy_difference_std": 0.0072663608498339935,
+      "macro_f1_difference_mean": 0.04287737248045019,
+      "macro_f1_difference_std": 0.006844411931101671
+    },
+    {
+      "representation": "PCA-16",
+      "reference": "Learned projection",
+      "accuracy_difference_mean": 0.023799999999999988,
+      "accuracy_difference_std": 0.013065221008463657,
+      "macro_f1_difference_mean": 0.07279930927503722,
+      "macro_f1_difference_std": 0.011902652983356377
+    },
+    {
+      "representation": "PCA-32",
+      "reference": "Learned projection",
+      "accuracy_difference_mean": 0.03679999999999999,
+      "accuracy_difference_std": 0.012517987058628874,
+      "macro_f1_difference_mean": 0.09671830622150462,
+      "macro_f1_difference_std": 0.015686577141767417
+    },
+    {
+      "representation": "PCA-64",
+      "reference": "Learned projection",
+      "accuracy_difference_mean": 0.06040000000000001,
+      "accuracy_difference_std": 0.014774978849392665,
+      "macro_f1_difference_mean": 0.12785075344051872,
+      "macro_f1_difference_std": 0.012996402281438528
+    },
+    {
+      "representation": "PCA-128",
+      "reference": "Learned projection",
+      "accuracy_difference_mean": 0.05939999999999999,
+      "accuracy_difference_std": 0.013957077057894325,
+      "macro_f1_difference_mean": 0.12947721690682895,
+      "macro_f1_difference_std": 0.012868127552064262
+    },
+    {
+      "representation": "Full CLS",
+      "reference": "Learned projection",
+      "accuracy_difference_mean": 0.0508,
+      "accuracy_difference_std": 0.013700364958642535,
+      "macro_f1_difference_mean": 0.10732612755927014,
+      "macro_f1_difference_std": 0.013988224716473744
+    }
+  ],
+  "limitations": [
+    "Exploratory validation-set evaluation, not an independent test estimate.",
+    "PCA retains variance, not necessarily class-discriminative information.",
+    "The learned projection was already fitted before this cross-validation.",
+    "Differences between PCA and the learned projection do not establish causation.",
+    "Five-fold results have dependent training sets; standard deviations are descriptive."
+  ]
+}

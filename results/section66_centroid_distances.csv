@@ -1,0 +1,181 @@
+representation,class_a,class_b,centroid_distance
+Transformer CLS,0,1,3.0895379729004997
+Transformer CLS,0,2,8.385684099799212
+Transformer CLS,0,3,7.712469045857762
+Transformer CLS,0,4,11.78645454940926
+Transformer CLS,0,5,9.029264778208592
+Transformer CLS,0,6,13.698931778741438
+Transformer CLS,0,7,8.848171220434283
+Transformer CLS,0,8,2.409446894802172
+Transformer CLS,0,9,2.915980010589169
+Transformer CLS,1,2,6.917583839986835
+Transformer CLS,1,3,5.794410279880837
+Transformer CLS,1,4,10.556926114360905
+Transformer CLS,1,5,7.176098451280292
+Transformer CLS,1,6,12.460954726984736
+Transformer CLS,1,7,6.822468586933313
+Transformer CLS,1,8,4.248543683860764
+Transformer CLS,1,9,0.435488426994272
+Transformer CLS,2,3,1.6559337716076383
+Transformer CLS,2,4,3.6651849064072963
+Transformer CLS,2,5,1.34944823321543
+Transformer CLS,2,6,5.555658980553538
+Transformer CLS,2,7,1.8197031920676197
+Transformer CLS,2,8,10.526956121121277
+Transformer CLS,2,9,7.2091751290776385
+Transformer CLS,3,4,5.095766113628346
+Transformer CLS,3,5,1.3954705176077618
+Transformer CLS,3,6,6.901481750269069
+Transformer CLS,3,7,1.1919510285604549
+Transformer CLS,3,8,9.697773633609362
+Transformer CLS,3,9,6.099203344633466
+Transformer CLS,4,5,3.9106107416821
+Transformer CLS,4,6,1.9325978541944282
+Transformer CLS,4,7,4.53173645525155
+Transformer CLS,4,8,13.998119158841197
+Transformer CLS,4,9,10.845513763437964
+Transformer CLS,5,6,5.623756629223723
+Transformer CLS,5,7,0.7146374239194444
+Transformer CLS,5,8,11.054916850675395
+Transformer CLS,5,9,7.4844688406930056
+Transformer CLS,6,7,6.200391370164301
+Transformer CLS,6,8,15.915665268788576
+Transformer CLS,6,9,12.751813162398774
+Transformer CLS,7,8,10.80693852712769
+Transformer CLS,7,9,7.141955206574724
+Transformer CLS,8,9,3.967945121821801
+Learned projection,0,1,0.6797746576064433
+Learned projection,0,2,1.4865861219197747
+Learned projection,0,3,1.446547516965252
+Learned projection,0,4,2.0286689007454015
+Learned projection,0,5,1.6698237606394997
+Learned projection,0,6,2.354859949377506
+Learned projection,0,7,1.6750896460769977
+Learned projection,0,8,0.38157667048081884
+Learned projection,0,9,0.6407884541907962
+Learned projection,1,2,1.162460199377645
+Learned projection,1,3,0.9874796934109454
+Learned projection,1,4,1.7730177319649656
+Learned projection,1,5,1.2298352452769812
+Learned projection,1,6,2.0997317612364053
+Learned projection,1,7,1.1953737914319449
+Learned projection,1,8,0.8313829445853307
+Learned projection,1,9,0.06991339415550708
+Learned projection,2,3,0.3250106378010188
+Learned projection,2,4,0.6133534671190435
+Learned projection,2,5,0.3110991058996201
+Learned projection,2,6,0.9376015456479578
+Learned projection,2,7,0.40535204093458516
+Learned projection,2,8,1.8222901604824027
+Learned projection,2,9,1.2271368316602254
+Learned projection,3,4,0.8776645397468322
+Learned projection,3,5,0.24237769024302086
+Learned projection,3,6,1.1785866986220852
+Learned projection,3,7,0.22888917799478123
+Learned projection,3,8,1.7403546271268728
+Learned projection,3,9,1.0564409508646362
+Learned projection,4,5,0.6955353523044512
+Learned projection,4,6,0.3303687414281924
+Learned projection,4,7,0.8024622306141428
+Learned projection,4,8,2.3859811638791384
+Learned projection,4,9,1.836538837900677
+Learned projection,5,6,0.9714324615068411
+Learned projection,5,7,0.11409647012963038
+Learned projection,5,8,1.9745030159439225
+Learned projection,5,9,1.2987881191435922
+Learned projection,6,7,1.0672276651577202
+Learned projection,6,8,2.714512644093822
+Learned projection,6,9,2.163907947164493
+Learned projection,7,8,1.964816621272977
+Learned projection,7,9,1.2648449950864857
+Learned projection,8,9,0.7699989674880144
+Bounded quantum inputs,0,1,0.5352818485022046
+Bounded quantum inputs,0,2,1.2106597704253335
+Bounded quantum inputs,0,3,1.121930661233059
+Bounded quantum inputs,0,4,1.778425311145054
+Bounded quantum inputs,0,5,1.3172070725135259
+Bounded quantum inputs,0,6,2.120660902537408
+Bounded quantum inputs,0,7,1.2529184581243535
+Bounded quantum inputs,0,8,0.4457392668365763
+Bounded quantum inputs,0,9,0.5178997210510723
+Bounded quantum inputs,1,2,1.0691776553831593
+Bounded quantum inputs,1,3,0.8675434419462713
+Bounded quantum inputs,1,4,1.6797868378171135
+Bounded quantum inputs,1,5,1.08085108722454
+Bounded quantum inputs,1,6,1.998026242270517
+Bounded quantum inputs,1,7,0.9866750025909156
+Bounded quantum inputs,1,8,0.6023985655575405
+Bounded quantum inputs,1,9,0.053693774017058576
+Bounded quantum inputs,2,3,0.2902645778775009
+Bounded quantum inputs,2,4,0.6117204241160401
+Bounded quantum inputs,2,5,0.23125798689839858
+Bounded quantum inputs,2,6,0.936358065965269
+Bounded quantum inputs,2,7,0.28940336876211914
+Bounded quantum inputs,2,8,1.532179212631065
+Bounded quantum inputs,2,9,1.113679098613001
+Bounded quantum inputs,3,4,0.8573796265649178
+Bounded quantum inputs,3,5,0.21603046372602058
+Bounded quantum inputs,3,6,1.1524463972548893
+Bounded quantum inputs,3,7,0.13200479726930273
+Bounded quantum inputs,3,8,1.3966920470504394
+Bounded quantum inputs,3,9,0.9132952252814274
+Bounded quantum inputs,4,5,0.6690783922326157
+Bounded quantum inputs,4,6,0.34563717735509564
+Bounded quantum inputs,4,7,0.7796917687545982
+Bounded quantum inputs,4,8,2.1180419230329575
+Bounded quantum inputs,4,9,1.7247346984789014
+Bounded quantum inputs,5,6,0.945924895701045
+Bounded quantum inputs,5,7,0.11098056731978773
+Bounded quantum inputs,5,8,1.6006240286508902
+Bounded quantum inputs,5,9,1.1274478214642705
+Bounded quantum inputs,6,7,1.0550192823952926
+Bounded quantum inputs,6,8,2.45132001807281
+Bounded quantum inputs,6,9,2.044255698797941
+Bounded quantum inputs,7,8,1.5218810410192316
+Bounded quantum inputs,7,9,1.0332400359004743
+Bounded quantum inputs,8,9,0.5707423681790628
+Quantum measurements,0,1,0.32735578775231217
+Quantum measurements,0,2,1.208316801726671
+Quantum measurements,0,3,1.0891032824667937
+Quantum measurements,0,4,1.7576980088370875
+Quantum measurements,0,5,1.3066329082261627
+Quantum measurements,0,6,2.009749226209453
+Quantum measurements,0,7,1.2410349065754773
+Quantum measurements,0,8,0.38957881418446566
+Quantum measurements,0,9,0.3996376893180303
+Quantum measurements,1,2,1.062096501859442
+Quantum measurements,1,3,0.8909442791192276
+Quantum measurements,1,4,1.634204511796668
+Quantum measurements,1,5,1.1293721793151834
+Quantum measurements,1,6,1.9101911507551408
+Quantum measurements,1,7,1.0517131575702987
+Quantum measurements,1,8,0.6635784720788409
+Quantum measurements,1,9,0.09453536548504174
+Quantum measurements,2,3,0.2511897754742384
+Quantum measurements,2,4,0.574412628361804
+Quantum measurements,2,5,0.1534342377239214
+Quantum measurements,2,6,0.8642002297920984
+Quantum measurements,2,7,0.1765979695600026
+Quantum measurements,2,8,1.5740113242178069
+Quantum measurements,2,9,1.1008263549912969
+Quantum measurements,3,4,0.7919793473233023
+Quantum measurements,3,5,0.2481968382903381
+Quantum measurements,3,6,1.092880249869182
+Quantum measurements,3,7,0.1640617368075343
+Quantum measurements,3,8,1.4673257203681416
+Quantum measurements,3,9,0.9138138686253027
+Quantum measurements,4,5,0.5506992264206405
+Quantum measurements,4,6,0.30824263078258024
+Quantum measurements,4,7,0.6404230549524296
+Quantum measurements,4,8,2.108779824311363
+Quantum measurements,4,9,1.674975240455521
+Quantum measurements,5,6,0.8544985070681117
+Quantum measurements,5,7,0.0897303227923537
+Quantum measurements,5,8,1.6784994873507602
+Quantum measurements,5,9,1.1572503186699576
+Quantum measurements,6,7,0.9440603999083891
+Quantum measurements,6,8,2.344642603616438
+Quantum measurements,6,9,1.9569618884061883
+Quantum measurements,7,8,1.6156642457918016
+Quantum measurements,7,9,1.0761810837968462
+Quantum measurements,8,9,0.7123950196393002

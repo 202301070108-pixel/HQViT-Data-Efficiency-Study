@@ -1,0 +1,32 @@
+{
+  "section": 60,
+  "diagnostic_only": true,
+  "device": "cpu",
+  "model_type": "CorrectedHybridQuantumViT",
+  "live_probe_samples": 32,
+  "total_parameters": 547720,
+  "trainable_parameters": 547720,
+  "nonfinite_parameter_values": 0,
+  "live_probe_accuracy": 0.125,
+  "live_probe_balanced_accuracy": 0.2,
+  "live_probe_macro_f1": 0.046405228758169936,
+  "live_probe_mcc": 0.09474352282088215,
+  "live_probe_mean_max_probability": 0.1302361786365509,
+  "live_probe_mean_entropy": 2.27834415435791,
+  "quantum_feature_dimension": 4,
+  "outputs": [
+    "section60_parameter_integrity.csv",
+    "section60_feature_stage_statistics.csv",
+    "section60_quantum_dimension_statistics.csv",
+    "section60_quantum_correlation_live_probe.csv",
+    "section60_live_probe_classification_report.csv",
+    "section60_live_probe_confidence_summary.csv",
+    "section60_live_probe_calibration_bins.csv",
+    "section60_gradient_flow.csv",
+    "section60_combined_historical_comparison.csv",
+    "section60_bottleneck_summary.csv",
+    "section60_feature_distribution.png",
+    "section60_quantum_correlation.png",
+    "section60_live_prediction_distribution.png"
+  ]
+}

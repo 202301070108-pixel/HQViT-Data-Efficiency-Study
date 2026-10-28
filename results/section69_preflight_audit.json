@@ -1,0 +1,104 @@
+{
+  "section": "69A",
+  "audit_only": true,
+  "training_performed": false,
+  "checkpoint_modified": false,
+  "quantum_circuit_executed": false,
+  "selected_instance": "corrected_hqvit",
+  "model_class": "CorrectedHybridQuantumViT",
+  "device": "cpu",
+  "total_parameters": 547720,
+  "trainable_parameters": 547720,
+  "existing_instances": {
+    "corrected_hqvit": {
+      "class": "CorrectedHybridQuantumViT",
+      "same_object_as_corrected_hqvit": true,
+      "state_dict_key_count": 67,
+      "parameter_count": 547720
+    },
+    "corrected_model": {
+      "class": "CorrectedHybridQuantumViT",
+      "same_object_as_corrected_hqvit": true,
+      "state_dict_key_count": 67,
+      "parameter_count": 547720
+    },
+    "hqvit_model": {
+      "class": "CorrectedHybridQuantumViT",
+      "same_object_as_corrected_hqvit": true,
+      "state_dict_key_count": 67,
+      "parameter_count": 547720
+    }
+  },
+  "projection": {
+    "input_dimension": 128,
+    "output_dimension": 4,
+    "weight_shape": [
+      4,
+      128
+    ],
+    "bias_shape": [
+      4
+    ]
+  },
+  "classifier": {
+    "class": "Sequential",
+    "linear_layers": [
+      {
+        "name": "0",
+        "input_dimension": 4,
+        "output_dimension": 32,
+        "weight_shape": [
+          32,
+          4
+        ]
+      },
+      {
+        "name": "3",
+        "input_dimension": 32,
+        "output_dimension": 10,
+        "weight_shape": [
+          10,
+          32
+        ]
+      }
+    ]
+  },
+  "quantum_weights": {
+    "shape": [
+      2,
+      4,
+      2
+    ],
+    "numel": 16
+  },
+  "circuit": {
+    "function_available": true,
+    "name": "quantum_circuit",
+    "signature": "(inputs, weights)",
+    "source_available": true
+  },
+  "checkpoint": {
+    "path": "models/hqvit_corrected_10pct.pt",
+    "exists": true,
+    "size_bytes": 2215960,
+    "already_loaded_object_type": "OrderedDict",
+    "already_loaded_key_count": 67,
+    "already_loaded_keys_preview": [
+      "quantum_weights",
+      "vit.cls_token",
+      "vit.pos_embedding",
+      "vit.patch_embedding.weight",
+      "vit.patch_embedding.bias",
+      "vit.transformer.layers.0.self_attn.in_proj_weight",
+      "vit.transformer.layers.0.self_attn.in_proj_bias",
+      "vit.transformer.layers.0.self_attn.out_proj.weight",
+      "vit.transformer.layers.0.self_attn.out_proj.bias",
+      "vit.transformer.layers.0.linear1.weight",
+      "vit.transformer.layers.0.linear1.bias",
+      "vit.transformer.layers.0.linear2.weight",
+      "vit.transformer.layers.0.linear2.bias",
+      "vit.transformer.layers.0.norm1.weight",
+      "vit.transformer.layers.0.norm1.bias"
+    ]
+  }
+}

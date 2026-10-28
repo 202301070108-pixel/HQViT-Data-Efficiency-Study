@@ -1,0 +1,94 @@
+{
+  "section": "69B",
+  "diagnostic_only": true,
+  "training_performed": false,
+  "quantum_circuit_executed": false,
+  "checkpoint_modified": false,
+  "circuit_constants": {
+    "N_QUBITS": 4,
+    "N_Q_LAYERS": 2
+  },
+  "baseline_model": {
+    "class": "CorrectedHybridQuantumViT",
+    "device": "cpu",
+    "parameter_count": 547720,
+    "projection": {
+      "input_dimension": 128,
+      "output_dimension": 4,
+      "weight_shape": [
+        4,
+        128
+      ]
+    },
+    "classifier_linear_layers": [
+      {
+        "name": "0",
+        "input_dimension": 4,
+        "output_dimension": 32
+      },
+      {
+        "name": "3",
+        "input_dimension": 32,
+        "output_dimension": 10
+      }
+    ],
+    "quantum_weights_shape": [
+      2,
+      4,
+      2
+    ],
+    "quantum_weights_count": 16
+  },
+  "compatibility_checks": {
+    "projection_output_matches_qubit_count": true,
+    "classifier_input_matches_circuit_measurement_count": true,
+    "quantum_weight_shape_matches_qubit_count": true
+  },
+  "candidate_designs": [
+    {
+      "name": "HQViT-4 baseline",
+      "projection_dimension": 4,
+      "qubit_count": 4,
+      "measurement_count": 4,
+      "design_type": "existing checkpoint",
+      "status": "baseline"
+    },
+    {
+      "name": "HQViT-8",
+      "projection_dimension": 8,
+      "qubit_count": 8,
+      "measurement_count": 8,
+      "design_type": "expanded circuit",
+      "status": "proposed; compatibility and runtime must be tested"
+    },
+    {
+      "name": "HQViT-16",
+      "projection_dimension": 16,
+      "qubit_count": 16,
+      "measurement_count": 16,
+      "design_type": "expanded circuit",
+      "status": "proposed; compatibility and runtime must be tested"
+    },
+    {
+      "name": "HQViT-8-to-4 control",
+      "projection_dimension": 8,
+      "qubit_count": 4,
+      "measurement_count": 4,
+      "design_type": "8D projection followed by explicit 8-to-4 compression",
+      "status": "proposed; requires a defined compression module"
+    },
+    {
+      "name": "HQViT-16-to-4 control",
+      "projection_dimension": 16,
+      "qubit_count": 4,
+      "measurement_count": 4,
+      "design_type": "16D projection followed by explicit 16-to-4 compression",
+      "status": "proposed; requires a defined compression module"
+    }
+  ],
+  "notes": [
+    "Candidate designs are specifications, not trained models.",
+    "Expanded circuit dimensions require matching circuit and classifier changes.",
+    "The original baseline checkpoint must remain unchanged."
+  ]
+}

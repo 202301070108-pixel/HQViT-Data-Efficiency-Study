@@ -1,0 +1,156 @@
+{
+  "section": 66,
+  "title": "Class-Discriminative Information Across the HQViT Representation Pipeline",
+  "diagnostic_only": true,
+  "neural_network_training_performed": false,
+  "checkpoint_modified": false,
+  "quantum_circuit_executed": false,
+  "validation_samples": 5000,
+  "number_of_classes": 10,
+  "cross_validation": {
+    "method": "StratifiedKFold",
+    "n_splits": 5,
+    "random_state": 42,
+    "same_folds_across_representations": true,
+    "scaling_fitted_inside_each_training_fold": true
+  },
+  "linear_probe_summary": [
+    {
+      "representation": "Transformer CLS",
+      "accuracy_mean": 0.251,
+      "accuracy_std": 0.016537835408541233,
+      "balanced_accuracy_mean": 0.24890864636760698,
+      "balanced_accuracy_std": 0.01639832571958642,
+      "macro_f1_mean": 0.23139608316021643,
+      "macro_f1_std": 0.016115070354950353
+    },
+    {
+      "representation": "Learned projection",
+      "accuracy_mean": 0.2002,
+      "accuracy_std": 0.0038987177379235824,
+      "balanced_accuracy_mean": 0.1945681132594685,
+      "balanced_accuracy_std": 0.0034385956694791262,
+      "macro_f1_mean": 0.12406995560094632,
+      "macro_f1_std": 0.003322709742528246
+    },
+    {
+      "representation": "Bounded quantum inputs",
+      "accuracy_mean": 0.19960000000000003,
+      "accuracy_std": 0.011610340218959991,
+      "balanced_accuracy_mean": 0.19401511643716368,
+      "balanced_accuracy_std": 0.011358958745073968,
+      "macro_f1_mean": 0.12456569902604038,
+      "macro_f1_std": 0.010501346403709344
+    },
+    {
+      "representation": "Quantum measurements",
+      "accuracy_mean": 0.19639999999999996,
+      "accuracy_std": 0.009555103348473001,
+      "balanced_accuracy_mean": 0.189605665601158,
+      "balanced_accuracy_std": 0.009089437617276626,
+      "macro_f1_mean": 0.11750747825878496,
+      "macro_f1_std": 0.00404491738649507
+    }
+  ],
+  "class_geometry": [
+    {
+      "representation": "Transformer CLS",
+      "dimensions": 128,
+      "within_class_scatter": 502996.2565828589,
+      "between_class_scatter": 137003.74341714123,
+      "between_within_scatter_ratio": 0.27237527441632664,
+      "between_scatter_fraction": 0.21406834908928313,
+      "centroid_distance_mean": 6.696293056848398,
+      "centroid_distance_std": 4.0205587463711385,
+      "centroid_distance_min": 0.435488426994272,
+      "centroid_distance_max": 15.915665268788576
+    },
+    {
+      "representation": "Learned projection",
+      "dimensions": 4,
+      "within_class_scatter": 15842.49985883245,
+      "between_class_scatter": 4157.500141167517,
+      "between_within_scatter_ratio": 0.2624270271872304,
+      "between_scatter_fraction": 0.20787500705837617,
+      "centroid_distance_mean": 1.1785351810377644,
+      "centroid_distance_std": 0.6832720755092729,
+      "centroid_distance_min": 0.06991339415550708,
+      "centroid_distance_max": 2.714512644093822
+    },
+    {
+      "representation": "Bounded quantum inputs",
+      "dimensions": 4,
+      "within_class_scatter": 16773.760431663388,
+      "between_class_scatter": 3226.239568336604,
+      "between_within_scatter_ratio": 0.19233847898808165,
+      "between_scatter_fraction": 0.16131197841683026,
+      "centroid_distance_mean": 1.0313379250786903,
+      "centroid_distance_std": 0.6059222854468128,
+      "centroid_distance_min": 0.053693774017058576,
+      "centroid_distance_max": 2.45132001807281
+    },
+    {
+      "representation": "Quantum measurements",
+      "dimensions": 4,
+      "within_class_scatter": 16895.528301407296,
+      "between_class_scatter": 3104.4716985926993,
+      "between_within_scatter_ratio": 0.18374516873403215,
+      "between_scatter_fraction": 0.155223584929635,
+      "centroid_distance_mean": 1.005592826192088,
+      "centroid_distance_std": 0.607537939516171,
+      "centroid_distance_min": 0.0897303227923537,
+      "centroid_distance_max": 2.344642603616438
+    }
+  ],
+  "paired_stage_comparisons": [
+    {
+      "first_representation": "Transformer CLS",
+      "second_representation": "Learned projection",
+      "accuracy_difference_mean": 0.0508,
+      "accuracy_difference_std": 0.013700364958642535,
+      "balanced_accuracy_difference_mean": 0.05434053310813852,
+      "balanced_accuracy_difference_std": 0.014589446990678465,
+      "macro_f1_difference_mean": 0.10732612755927014,
+      "macro_f1_difference_std": 0.013988224716473744
+    },
+    {
+      "first_representation": "Learned projection",
+      "second_representation": "Bounded quantum inputs",
+      "accuracy_difference_mean": 0.0006000000000000061,
+      "accuracy_difference_std": 0.01128273016605466,
+      "balanced_accuracy_difference_mean": 0.0005529968223048021,
+      "balanced_accuracy_difference_std": 0.011896147433768859,
+      "macro_f1_difference_mean": -0.0004957434250940473,
+      "macro_f1_difference_std": 0.010918241804157455
+    },
+    {
+      "first_representation": "Bounded quantum inputs",
+      "second_representation": "Quantum measurements",
+      "accuracy_difference_mean": 0.0032000000000000028,
+      "accuracy_difference_std": 0.006379655163094623,
+      "balanced_accuracy_difference_mean": 0.004409450836005685,
+      "balanced_accuracy_difference_std": 0.00581659108674548,
+      "macro_f1_difference_mean": 0.0070582207672553994,
+      "macro_f1_difference_std": 0.010196643777374132
+    },
+    {
+      "first_representation": "Transformer CLS",
+      "second_representation": "Quantum measurements",
+      "accuracy_difference_mean": 0.0546,
+      "accuracy_difference_std": 0.009607288899580364,
+      "balanced_accuracy_difference_mean": 0.05930298076644901,
+      "balanced_accuracy_difference_std": 0.010140581441224828,
+      "macro_f1_difference_mean": 0.11388860490143149,
+      "macro_f1_difference_std": 0.015018238130218207
+    }
+  ],
+  "limitations": [
+    "Results use validation labels and are exploratory.",
+    "Linear probes measure linear accessibility, not total information content.",
+    "Class geometry is computed descriptively on the complete validation set.",
+    "Geometry metrics depend on the chosen standardization and representation.",
+    "Paired fold differences are descriptive and do not establish causality.",
+    "The learned projection was trained before this cross-validation.",
+    "Final confirmatory claims require an independently reserved test set."
+  ]
+}

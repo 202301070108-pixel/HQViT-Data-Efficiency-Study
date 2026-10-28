@@ -1,0 +1,115 @@
+{
+  "section": "69D",
+  "diagnostic_only": true,
+  "training_performed": false,
+  "quantum_circuit_executed": false,
+  "baseline_checkpoint_modified": false,
+  "baseline_model_unchanged": true,
+  "variants": {
+    "4": {
+      "projection_dimension": 4,
+      "expanded_projection_shape": [
+        4,
+        128
+      ],
+      "compression_type": "Identity",
+      "compression_weight_shape": null,
+      "circuit_input_dimension": 4,
+      "quantum_weights_shape": [
+        2,
+        4,
+        2
+      ],
+      "classifier_first_layer_input": 4,
+      "parameter_count": 548236
+    },
+    "8": {
+      "projection_dimension": 8,
+      "expanded_projection_shape": [
+        8,
+        128
+      ],
+      "compression_type": "Linear",
+      "compression_weight_shape": [
+        4,
+        8
+      ],
+      "circuit_input_dimension": 4,
+      "quantum_weights_shape": [
+        2,
+        4,
+        2
+      ],
+      "classifier_first_layer_input": 4,
+      "parameter_count": 548788
+    },
+    "16": {
+      "projection_dimension": 16,
+      "expanded_projection_shape": [
+        16,
+        128
+      ],
+      "compression_type": "Linear",
+      "compression_weight_shape": [
+        4,
+        16
+      ],
+      "circuit_input_dimension": 4,
+      "quantum_weights_shape": [
+        2,
+        4,
+        2
+      ],
+      "classifier_first_layer_input": 4,
+      "parameter_count": 549852
+    }
+  },
+  "shape_checks": {
+    "4": {
+      "expanded_shape": [
+        2,
+        4
+      ],
+      "circuit_input_shape": [
+        2,
+        4
+      ],
+      "expanded_shape_valid": true,
+      "circuit_input_shape_valid": true,
+      "all_outputs_finite": true
+    },
+    "8": {
+      "expanded_shape": [
+        2,
+        8
+      ],
+      "circuit_input_shape": [
+        2,
+        4
+      ],
+      "expanded_shape_valid": true,
+      "circuit_input_shape_valid": true,
+      "all_outputs_finite": true
+    },
+    "16": {
+      "expanded_shape": [
+        2,
+        16
+      ],
+      "circuit_input_shape": [
+        2,
+        4
+      ],
+      "expanded_shape_valid": true,
+      "circuit_input_shape_valid": true,
+      "all_outputs_finite": true
+    }
+  },
+  "notes": [
+    "The 8D and 16D designs include learned compression to four circuit inputs.",
+    "The quantum circuit itself is unchanged.",
+    "This is an architectural preflight, not an accuracy experiment.",
+    "New projection layers use fresh initialization.",
+    "No optimizer steps or checkpoint writes were performed."
+  ]
+}

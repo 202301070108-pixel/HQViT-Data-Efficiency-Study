@@ -1,0 +1,65 @@
+{
+  "section": 62,
+  "diagnostic_only": true,
+  "hqvit_training_performed": false,
+  "optimizer_steps_performed": false,
+  "checkpoint_modified": false,
+  "validation_samples": 5000,
+  "representation_dimensions": {
+    "transformer_cls": 128,
+    "projection": 4,
+    "bounded_quantum_inputs": 4,
+    "actual_quantum_measurements": 4
+  },
+  "projection_correlation": {
+    "mean_absolute_off_diagonal_correlation": 0.568288629243516,
+    "maximum_absolute_off_diagonal_correlation": 0.9880871598631679,
+    "undefined_correlation_pairs": 0
+  },
+  "quantum_input_correlation": {
+    "mean_absolute_off_diagonal_correlation": 0.39162392260054957,
+    "maximum_absolute_off_diagonal_correlation": 0.9734753352330847,
+    "undefined_correlation_pairs": 0
+  },
+  "quantum_output_correlation": {
+    "mean_absolute_off_diagonal_correlation": 0.480545301611851,
+    "maximum_absolute_off_diagonal_correlation": 0.9966056416720614,
+    "undefined_correlation_pairs": 0
+  },
+  "all_representations_finite": true,
+  "probe_results": [
+    {
+      "representation": "Transformer CLS",
+      "samples": 5000,
+      "feature_dimension": 128,
+      "cv_accuracy_mean": 0.2476,
+      "cv_accuracy_std": 0.015054567413247056,
+      "cv_folds": 5
+    },
+    {
+      "representation": "Projection features",
+      "samples": 5000,
+      "feature_dimension": 4,
+      "cv_accuracy_mean": 0.2004,
+      "cv_accuracy_std": 0.008546344247688593,
+      "cv_folds": 5
+    },
+    {
+      "representation": "Bounded quantum inputs",
+      "samples": 5000,
+      "feature_dimension": 4,
+      "cv_accuracy_mean": 0.1992,
+      "cv_accuracy_std": 0.009108238029388557,
+      "cv_folds": 5
+    },
+    {
+      "representation": "Actual quantum measurements",
+      "samples": 5000,
+      "feature_dimension": 4,
+      "cv_accuracy_mean": 0.1972,
+      "cv_accuracy_std": 0.010186265262597477,
+      "cv_folds": 5
+    }
+  ],
+  "interpretation_note": "Quantum measurements were captured from the actual circuit invocations in the model forward pass. Linear probes use validation labels and are exploratory, not independent test-set generalization estimates. Correlation describes linear association and does not establish causation."
+}
