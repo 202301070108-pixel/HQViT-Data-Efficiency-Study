@@ -1,0 +1,11 @@
+Class,Actual_Count,Predicted_Count,Predicted_Percentage
+airplane,453,0,0.0
+automobile,480,0,0.0
+bird,514,0,0.0
+cat,525,0,0.0
+deer,491,0,0.0
+dog,517,0,0.0
+frog,560,2137,42.74
+horse,476,342,6.84
+ship,491,991,19.82
+truck,493,1530,30.6

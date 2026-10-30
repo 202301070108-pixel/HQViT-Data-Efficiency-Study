@@ -1,0 +1,4 @@
+model,best_train_accuracy,best_train_epoch,validation_accuracy_at_best_train,final_train_accuracy,final_validation_accuracy,final_validation_macro_f1
+Frozen_Classical_Control,0.1953125,11,0.2042,0.1953125,0.2096,0.1187591281852042
+Frozen_HQViT,0.21484375,15,0.1648,0.21484375,0.1648,0.08987378616389255
+Frozen_ViT_Linear,0.2109375,12,0.1864,0.203125,0.1916,0.14415417664255384

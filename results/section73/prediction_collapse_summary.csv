@@ -1,0 +1,4 @@
+model,unique_predicted_classes,classes_never_predicted,largest_class_share,prediction_entropy,effective_predicted_classes
+HQViT-4,4,"airplane, automobile, bird, cat, deer, dog",0.4274,1.2299184355712847,3.4209504970370355
+HQViT-8to4,7,"automobile, bird, dog",0.3558,1.4727421067331556,4.361177574257286
+HQViT-16to4,4,"airplane, automobile, bird, cat, deer, dog",0.4122,1.2693157211411932,3.5584167797001043

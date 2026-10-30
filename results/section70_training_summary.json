@@ -1,0 +1,20 @@
+{
+  "HQViT-4": {
+    "completed_epochs": 3,
+    "best_val_accuracy": 0.2166,
+    "parameters": 547720,
+    "elapsed_seconds": 391.71672105789185
+  },
+  "HQViT-8to4": {
+    "completed_epochs": 3,
+    "best_val_accuracy": 0.2152,
+    "parameters": 548272,
+    "elapsed_seconds": 386.58987188339233
+  },
+  "HQViT-16to4": {
+    "completed_epochs": 3,
+    "best_val_accuracy": 0.219,
+    "parameters": 549336,
+    "elapsed_seconds": 374.5207471847534
+  }
+}

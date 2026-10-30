@@ -1,0 +1,265 @@
+{
+  "section": 86,
+  "purpose": "diagnostics only; no full training",
+  "device": "cpu",
+  "train_dataset_size": 50000,
+  "validation_dataset_size": 5000,
+  "train_batch_shape": [
+    8,
+    3,
+    32,
+    32
+  ],
+  "validation_batch_shape": [
+    8,
+    3,
+    32,
+    32
+  ],
+  "repeated_batch_steps": 5,
+  "models": {
+    "HQViT": {
+      "initial_loss": 2.6315431594848633,
+      "initial_accuracy": 0.0,
+      "initial_prediction_counts": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        2,
+        1
+      ],
+      "gradient_parameters_with_grad": 63,
+      "gradient_parameters_nonzero": 63,
+      "parameters_without_grad": [
+        "vit.classifier.0.weight",
+        "vit.classifier.0.bias",
+        "vit.classifier.1.weight",
+        "vit.classifier.1.bias"
+      ],
+      "optimizer_changed_tensors": 63,
+      "repeated_batch_losses": [
+        2.7176754474639893,
+        2.7297210693359375,
+        2.5789754390716553,
+        2.593290328979492,
+        2.4838242530822754
+      ],
+      "final_fixed_batch_loss": 2.4997341632843018,
+      "final_fixed_batch_accuracy": 0.0,
+      "fixed_batch_loss_decreased": true,
+      "validation_batch_loss": 2.040520429611206,
+      "validation_batch_accuracy": 0.375,
+      "validation_batch_prediction_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        2
+      ]
+    },
+    "Classical_Control": {
+      "initial_loss": 2.361839532852173,
+      "initial_accuracy": 0.0,
+      "initial_prediction_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        3,
+        0,
+        1
+      ],
+      "gradient_parameters_with_grad": 64,
+      "gradient_parameters_nonzero": 64,
+      "parameters_without_grad": [
+        "vit.classifier.0.weight",
+        "vit.classifier.0.bias",
+        "vit.classifier.1.weight",
+        "vit.classifier.1.bias"
+      ],
+      "optimizer_changed_tensors": 64,
+      "repeated_batch_losses": [
+        2.416072130203247,
+        2.249157667160034,
+        2.2731378078460693,
+        2.3011438846588135,
+        2.151608943939209
+      ],
+      "final_fixed_batch_loss": 2.210200548171997,
+      "final_fixed_batch_accuracy": 0.25,
+      "fixed_batch_loss_decreased": true,
+      "validation_batch_loss": 2.0861546993255615,
+      "validation_batch_accuracy": 0.25,
+      "validation_batch_prediction_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  "checks": [
+    {
+      "check": "Required notebook objects",
+      "status": "PASS",
+      "details": "All required models, datasets, and quantum circuit objects exist."
+    },
+    {
+      "check": "Training batch structure",
+      "status": "PASS",
+      "details": "images=(8, 3, 32, 32), labels=(8,)"
+    },
+    {
+      "check": "Validation batch structure",
+      "status": "PASS",
+      "details": "images=(8, 3, 32, 32), labels=(8,)"
+    },
+    {
+      "check": "Label range",
+      "status": "PASS",
+      "details": "train labels=[1, 2, 3, 4, 5, 6, 7, 9]; validation labels=[1, 2, 3, 4, 6, 9]"
+    },
+    {
+      "check": "HQViT: output shape",
+      "status": "PASS",
+      "details": "observed=(8, 10), expected=(8, 10)"
+    },
+    {
+      "check": "HQViT: finite logits",
+      "status": "PASS",
+      "details": "all logits finite=True"
+    },
+    {
+      "check": "HQViT: finite loss",
+      "status": "PASS",
+      "details": "cross-entropy=2.631543"
+    },
+    {
+      "check": "HQViT: finite gradients",
+      "status": "PASS",
+      "details": "nonfinite gradient parameters=[]"
+    },
+    {
+      "check": "HQViT: nonzero gradients",
+      "status": "PASS",
+      "details": "63 trainable parameters have nonzero gradients"
+    },
+    {
+      "check": "HQViT: quantum_projection receives gradient",
+      "status": "PASS",
+      "details": "trainable tensors=2"
+    },
+    {
+      "check": "HQViT: classifier receives gradient",
+      "status": "PASS",
+      "details": "trainable tensors=4"
+    },
+    {
+      "check": "HQViT: quantum weights receive gradient",
+      "status": "PASS",
+      "details": "quantum weight gradient norm=0.587156"
+    },
+    {
+      "check": "HQViT: optimizer updates parameters",
+      "status": "PASS",
+      "details": "63/67 trainable tensors changed"
+    },
+    {
+      "check": "HQViT: fixed-batch loss decreases",
+      "status": "PASS",
+      "details": "initial=2.631543, final=2.499734"
+    },
+    {
+      "check": "HQViT: validation outputs finite",
+      "status": "PASS",
+      "details": "validation loss=2.040520; batch accuracy=0.3750"
+    },
+    {
+      "check": "Classical_Control: output shape",
+      "status": "PASS",
+      "details": "observed=(8, 10), expected=(8, 10)"
+    },
+    {
+      "check": "Classical_Control: finite logits",
+      "status": "PASS",
+      "details": "all logits finite=True"
+    },
+    {
+      "check": "Classical_Control: finite loss",
+      "status": "PASS",
+      "details": "cross-entropy=2.361840"
+    },
+    {
+      "check": "Classical_Control: finite gradients",
+      "status": "PASS",
+      "details": "nonfinite gradient parameters=[]"
+    },
+    {
+      "check": "Classical_Control: nonzero gradients",
+      "status": "PASS",
+      "details": "64 trainable parameters have nonzero gradients"
+    },
+    {
+      "check": "Classical_Control: optimizer updates parameters",
+      "status": "PASS",
+      "details": "64/68 trainable tensors changed"
+    },
+    {
+      "check": "Classical_Control: fixed-batch loss decreases",
+      "status": "PASS",
+      "details": "initial=2.361840, final=2.210201"
+    },
+    {
+      "check": "Classical_Control: validation outputs finite",
+      "status": "PASS",
+      "details": "validation loss=2.086155; batch accuracy=0.2500"
+    },
+    {
+      "check": "HQViT: repeatable eval outputs",
+      "status": "PASS",
+      "details": "maximum absolute difference=0"
+    },
+    {
+      "check": "Classical_Control: repeatable eval outputs",
+      "status": "PASS",
+      "details": "maximum absolute difference=0"
+    },
+    {
+      "check": "Frozen backbone dropout can be disabled",
+      "status": "PASS",
+      "details": "active dropout modules before=13, after explicit vit.eval()=0"
+    },
+    {
+      "check": "Frozen HQViT eval repeatability",
+      "status": "PASS",
+      "details": "maximum absolute difference=0"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "A single small batch cannot establish generalization.",
+    "A decreasing fixed-batch loss does not prove the model is well trained.",
+    "Nonzero gradients do not prove the quantum circuit is useful.",
+    "Section 85 frozen-backbone results may be affected by dropout remaining active.",
+    "The classical control has an additional learned 4-to-4 layer; it is a control, not a perfectly identical architecture."
+  ]
+}

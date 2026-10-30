@@ -1,0 +1,28 @@
+check,status,details
+Required notebook objects,PASS,"All required models, datasets, and quantum circuit objects exist."
+Training batch structure,PASS,"images=(8, 3, 32, 32), labels=(8,)"
+Validation batch structure,PASS,"images=(8, 3, 32, 32), labels=(8,)"
+Label range,PASS,"train labels=[1, 2, 3, 4, 5, 6, 7, 9]; validation labels=[1, 2, 3, 4, 6, 9]"
+HQViT: output shape,PASS,"observed=(8, 10), expected=(8, 10)"
+HQViT: finite logits,PASS,all logits finite=True
+HQViT: finite loss,PASS,cross-entropy=2.631543
+HQViT: finite gradients,PASS,nonfinite gradient parameters=[]
+HQViT: nonzero gradients,PASS,63 trainable parameters have nonzero gradients
+HQViT: quantum_projection receives gradient,PASS,trainable tensors=2
+HQViT: classifier receives gradient,PASS,trainable tensors=4
+HQViT: quantum weights receive gradient,PASS,quantum weight gradient norm=0.587156
+HQViT: optimizer updates parameters,PASS,63/67 trainable tensors changed
+HQViT: fixed-batch loss decreases,PASS,"initial=2.631543, final=2.499734"
+HQViT: validation outputs finite,PASS,validation loss=2.040520; batch accuracy=0.3750
+Classical_Control: output shape,PASS,"observed=(8, 10), expected=(8, 10)"
+Classical_Control: finite logits,PASS,all logits finite=True
+Classical_Control: finite loss,PASS,cross-entropy=2.361840
+Classical_Control: finite gradients,PASS,nonfinite gradient parameters=[]
+Classical_Control: nonzero gradients,PASS,64 trainable parameters have nonzero gradients
+Classical_Control: optimizer updates parameters,PASS,64/68 trainable tensors changed
+Classical_Control: fixed-batch loss decreases,PASS,"initial=2.361840, final=2.210201"
+Classical_Control: validation outputs finite,PASS,validation loss=2.086155; batch accuracy=0.2500
+HQViT: repeatable eval outputs,PASS,maximum absolute difference=0
+Classical_Control: repeatable eval outputs,PASS,maximum absolute difference=0
+Frozen backbone dropout can be disabled,PASS,"active dropout modules before=13, after explicit vit.eval()=0"
+Frozen HQViT eval repeatability,PASS,maximum absolute difference=0
