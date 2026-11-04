@@ -1,0 +1,19 @@
+{
+  "project": "Data-Efficient Image Classification Using a Hybrid Quantum-Classical Vision Transformer",
+  "dataset": "CIFAR-10",
+  "seed": 42,
+  "split": "torch.random_split([45000, 5000], generator=torch.Generator().manual_seed(SEED))",
+  "training_pool": 45000,
+  "validation": 5000,
+  "test": 10000,
+  "fractions": [
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "batch_size": 32,
+  "max_epochs": 15,
+  "device": "cpu",
+  "hqvit": "fresh rebuilt implementation; not asserted identical to historical model"
+}

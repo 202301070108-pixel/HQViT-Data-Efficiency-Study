@@ -1,0 +1,11 @@
+{
+    "model": "HQViT",
+    "architecture": "Rebuilt CorrectedHybridQuantumViT",
+    "parameters": 809086,
+    "dataset": "CIFAR-10",
+    "epochs_completed": 15,
+    "final_train_accuracy": 0.3,
+    "final_validation_accuracy": 0.29,
+    "device": "cpu",
+    "saved_at": "2026-11-04T11:41:57.177879"
+}
