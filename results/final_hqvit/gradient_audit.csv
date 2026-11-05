@@ -1,0 +1,62 @@
+Parameter,Shape,Gradient Norm,Status
+quantum_weights,"(2, 4, 2)",0.08069256693124771,ACTIVE
+vit.cls_token,"(1, 1, 128)",0.21269011497497559,ACTIVE
+vit.pos_embed,"(1, 65, 128)",0.2752312421798706,ACTIVE
+vit.patch_embed.weight,"(128, 3, 4, 4)",1.843147873878479,ACTIVE
+vit.patch_embed.bias,"(128,)",0.5576115846633911,ACTIVE
+vit.transformer.layers.0.self_attn.in_proj_weight,"(384, 128)",0.616179347038269,ACTIVE
+vit.transformer.layers.0.self_attn.in_proj_bias,"(384,)",0.35554978251457214,ACTIVE
+vit.transformer.layers.0.self_attn.out_proj.weight,"(128, 128)",0.5855671167373657,ACTIVE
+vit.transformer.layers.0.self_attn.out_proj.bias,"(128,)",0.4646608233451843,ACTIVE
+vit.transformer.layers.0.linear1.weight,"(512, 128)",0.39274877309799194,ACTIVE
+vit.transformer.layers.0.linear1.bias,"(512,)",0.05044621229171753,ACTIVE
+vit.transformer.layers.0.linear2.weight,"(128, 512)",0.6363002061843872,ACTIVE
+vit.transformer.layers.0.linear2.bias,"(128,)",0.11328055709600449,ACTIVE
+vit.transformer.layers.0.norm1.weight,"(128,)",0.07687658071517944,ACTIVE
+vit.transformer.layers.0.norm1.bias,"(128,)",0.1507435142993927,ACTIVE
+vit.transformer.layers.0.norm2.weight,"(128,)",0.06576672941446304,ACTIVE
+vit.transformer.layers.0.norm2.bias,"(128,)",0.11149228364229202,ACTIVE
+vit.transformer.layers.1.self_attn.in_proj_weight,"(384, 128)",0.5918964147567749,ACTIVE
+vit.transformer.layers.1.self_attn.in_proj_bias,"(384,)",0.06607765704393387,ACTIVE
+vit.transformer.layers.1.self_attn.out_proj.weight,"(128, 128)",0.40536001324653625,ACTIVE
+vit.transformer.layers.1.self_attn.out_proj.bias,"(128,)",0.06896699219942093,ACTIVE
+vit.transformer.layers.1.linear1.weight,"(512, 128)",0.26262134313583374,ACTIVE
+vit.transformer.layers.1.linear1.bias,"(512,)",0.02660190500319004,ACTIVE
+vit.transformer.layers.1.linear2.weight,"(128, 512)",0.43345171213150024,ACTIVE
+vit.transformer.layers.1.linear2.bias,"(128,)",0.061940573155879974,ACTIVE
+vit.transformer.layers.1.norm1.weight,"(128,)",0.054844941943883896,ACTIVE
+vit.transformer.layers.1.norm1.bias,"(128,)",0.07305581122636795,ACTIVE
+vit.transformer.layers.1.norm2.weight,"(128,)",0.06472377479076385,ACTIVE
+vit.transformer.layers.1.norm2.bias,"(128,)",0.0661824494600296,ACTIVE
+vit.transformer.layers.2.self_attn.in_proj_weight,"(384, 128)",0.48082250356674194,ACTIVE
+vit.transformer.layers.2.self_attn.in_proj_bias,"(384,)",0.043121274560689926,ACTIVE
+vit.transformer.layers.2.self_attn.out_proj.weight,"(128, 128)",0.22424747049808502,ACTIVE
+vit.transformer.layers.2.self_attn.out_proj.bias,"(128,)",0.034181252121925354,ACTIVE
+vit.transformer.layers.2.linear1.weight,"(512, 128)",0.1497625708580017,ACTIVE
+vit.transformer.layers.2.linear1.bias,"(512,)",0.013542343862354755,ACTIVE
+vit.transformer.layers.2.linear2.weight,"(128, 512)",0.2539784610271454,ACTIVE
+vit.transformer.layers.2.linear2.bias,"(128,)",0.03134985268115997,ACTIVE
+vit.transformer.layers.2.norm1.weight,"(128,)",0.03465227037668228,ACTIVE
+vit.transformer.layers.2.norm1.bias,"(128,)",0.03585799038410187,ACTIVE
+vit.transformer.layers.2.norm2.weight,"(128,)",0.03839229419827461,ACTIVE
+vit.transformer.layers.2.norm2.bias,"(128,)",0.03294234722852707,ACTIVE
+vit.transformer.layers.3.self_attn.in_proj_weight,"(384, 128)",0.324535608291626,ACTIVE
+vit.transformer.layers.3.self_attn.in_proj_bias,"(384,)",0.02598969079554081,ACTIVE
+vit.transformer.layers.3.self_attn.out_proj.weight,"(128, 128)",0.19884945452213287,ACTIVE
+vit.transformer.layers.3.self_attn.out_proj.bias,"(128,)",0.02525913715362549,ACTIVE
+vit.transformer.layers.3.linear1.weight,"(512, 128)",0.22321467101573944,ACTIVE
+vit.transformer.layers.3.linear1.bias,"(512,)",0.018123747780919075,ACTIVE
+vit.transformer.layers.3.linear2.weight,"(128, 512)",0.36252713203430176,ACTIVE
+vit.transformer.layers.3.linear2.bias,"(128,)",0.04051586985588074,ACTIVE
+vit.transformer.layers.3.norm1.weight,"(128,)",0.03767941892147064,ACTIVE
+vit.transformer.layers.3.norm1.bias,"(128,)",0.0307255070656538,ACTIVE
+vit.transformer.layers.3.norm2.weight,"(128,)",0.05269968882203102,ACTIVE
+vit.transformer.layers.3.norm2.bias,"(128,)",0.04739254340529442,ACTIVE
+projection_norm.weight,"(128,)",0.05499555170536041,ACTIVE
+projection_norm.bias,"(128,)",0.04429538547992706,ACTIVE
+projection.weight,"(4, 128)",1.0726312398910522,ACTIVE
+projection.bias,"(4,)",0.07700144499540329,ACTIVE
+classifier.0.weight,"(32, 4)",0.12065653502941132,ACTIVE
+classifier.0.bias,"(32,)",0.06881571561098099,ACTIVE
+classifier.2.weight,"(10, 32)",0.366024911403656,ACTIVE
+classifier.2.bias,"(10,)",0.16221579909324646,ACTIVE

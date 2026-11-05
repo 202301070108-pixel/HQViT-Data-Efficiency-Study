@@ -1,0 +1,2 @@
+Model,Epoch,Train_Loss,Train_Accuracy,Train_Macro_F1,Validation_Loss,Validation_Accuracy,Validation_Macro_F1,Epoch_Time_Seconds
+Classical_Bottleneck,1,1.9263514726824513,0.27597777777777777,0.25437152925877426,1.691580807327465,0.3614,0.33036278688927934,411.81345534324646

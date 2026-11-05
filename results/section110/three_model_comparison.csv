@@ -1,0 +1,4 @@
+Model,Completed_Epochs,Best_Epoch,Best_Validation_Accuracy,Best_Validation_Macro_F1
+Classical ViT,10,9,0.649,0.6438962820881529
+Classical Bottleneck,9,10,0.609,0.6042197736980924
+HQViT,10,10,0.5628,0.5447922219570102
